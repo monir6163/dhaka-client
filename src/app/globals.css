@@ -3,25 +3,83 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.btn {
+    @apply bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 transition duration-200 ease-in-out;
+}
+
+.card_btn {
+    @apply w-full px-9 py-3 bg-color-primary-dark rounded-md capitalize font-bold hover:bg-color-secondary ease-in duration-200;
+}
+
+.title {
+    @apply text-3xl md:text-4xl font-bold leading-snug mb-10;
+}
+
+.blob1 {
+    @apply w-80 h-80 bg-color-blob absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full;
+}
+
+.blob2 {
+    @apply w-80 h-80 bg-color-secondary absolute bottom-10 right-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full;
+}
+
+.user-text {
+    display: none;
+}
+
+.user-text.active-text {
+    display: block;
+    animation: moveup 1s linear forwards;
+}
+
+.user-img {
+    transition: all 0.2s ease;
+}
+
+.user-img.active-img {
+    border: 2px solid #ff7d3b;
+}
+
+@keyframes moveup {
+    0% {
+        margin-top: 40px;
+        opacity: 0;
+    }
+
+    50% {
+        margin-top: 20px;
+        opacity: 0.1;
+    }
+
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+.card {
+    perspective: 1000px;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.front {
+    overflow: hidden;
 }
