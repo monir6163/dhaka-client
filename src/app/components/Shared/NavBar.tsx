@@ -47,7 +47,7 @@ const NavBar = () => {
                 link.addEventListener("click", () => {
                     menu.classList.toggle("hidden");
                     faSolid.classList.toggle("fa-times");
-                    hamburger.classList.toggle("hidden");
+                    hamburger.classList.toggle("block");
                 });
             });
         }
