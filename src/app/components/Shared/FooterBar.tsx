@@ -35,19 +35,19 @@ const FooterBar = () => {
                                         <a href="#">Home</a>
                                     </li>
                                     <li className="underline hover:no-underline hover:text-color-secondary">
-                                        <a href="#features">Features</a>
+                                        <a href="#">Features</a>
                                     </li>
                                     <li className="underline hover:no-underline hover:text-color-secondary">
-                                        <a href="#testimonial">Testimonial</a>
+                                        <a href="#">Testimonial</a>
                                     </li>
                                     <li className="underline hover:no-underline hover:text-color-secondary">
-                                        <a href="#pricing">Pricing</a>
+                                        <a href="#">Pricing</a>
                                     </li>
                                     <li className="underline hover:no-underline hover:text-color-secondary">
-                                        <a href="#blog">Blog</a>
+                                        <a href="#">Blog</a>
                                     </li>
                                     <li className="underline hover:no-underline hover:text-color-secondary">
-                                        <a href="#contact">Contact</a>
+                                        <a href="#">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -58,19 +58,19 @@ const FooterBar = () => {
                                         <a href="#">About Us</a>
                                     </li>
                                     <li className="underline hover:no-underline hover:text-color-secondary">
-                                        <a href="#features">Partners</a>
+                                        <a href="#">Partners</a>
                                     </li>
                                     <li className="underline hover:no-underline hover:text-color-secondary">
-                                        <a href="#testimonial">Career</a>
+                                        <a href="#">Career</a>
                                     </li>
                                     <li className="underline hover:no-underline hover:text-color-secondary">
-                                        <a href="#pricing">Reviews</a>
+                                        <a href="#">Reviews</a>
                                     </li>
                                     <li className="underline hover:no-underline hover:text-color-secondary">
-                                        <a href="#blog">Terms & Conditions</a>
+                                        <a href="#">Terms & Conditions</a>
                                     </li>
                                     <li className="underline hover:no-underline hover:text-color-secondary">
-                                        <a href="#contact">Help</a>
+                                        <a href="#">Help</a>
                                     </li>
                                 </ul>
                             </div>
