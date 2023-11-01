@@ -77,7 +77,7 @@ const NavBar = () => {
           <nav className="container flex justify-between items-center">
             <div className="py-5 text-color-secondary font-bold text-3xl">
               <Link href="/" className="ease-in duration-200">
-                <span className="text-white">Dhaka</span>Client
+                <span className="text-white">Nextjs</span>14
               </Link>
             </div>
             <div>

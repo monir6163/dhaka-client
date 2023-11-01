@@ -58,7 +58,7 @@ const MobileNavBar = () => {
       <nav className="nav_mobile container">
         <div className="py-5 text-color-secondary font-bold text-3xl">
           <Link href="/">
-            <span className="text-red-100">Dhaka</span>Client
+            <span className="text-red-100">Nextjs</span>14
           </Link>
         </div>
         <div className="nav__menu" id="nav-menu">
