@@ -33,7 +33,11 @@ const NavBar = () => {
 
     // Function to check screen width and set the isMobile state
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+      if (window.innerWidth < 1024) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
     };
 
     // Attach the event listener for window resize
@@ -73,7 +77,7 @@ const NavBar = () => {
       {isMobile ? (
         <MobileNavBar />
       ) : (
-        <header className="sticky top-0 z-50">
+        <header className="sticky top-0 z-50 md:hidden lg:block">
           <nav className="container flex justify-between items-center">
             <div className="py-5 text-color-secondary font-bold text-3xl">
               <Link href="/" className="ease-in duration-200">

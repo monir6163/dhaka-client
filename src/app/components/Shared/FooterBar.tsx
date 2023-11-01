@@ -91,14 +91,14 @@ const FooterBar = () => {
             </div>
           </div>
           <div className="flex justify-center pt-10 border-t border-color-gray">
-            <p>
-              2023 &copy; <span className="text-color-secondary">Dhaka</span>
-              Client. All Rights Reserved.
+            <p className="p-5">
+              2023 &copy; <span className="text-color-secondary">Nextjs</span>
+              14. All Rights Reserved.
             </p>
           </div>
         </div>
       </div>
-      <div className="fixed bottom-14 lg:bottom-5 right-5 z-50">
+      <div className="fixed bottom-16 lg:bottom-5 right-5 z-50">
         <button
           id="toTop"
           className="hidden bg-color-secondary text-color-white p-3 rounded-full hover:opacity-90"
