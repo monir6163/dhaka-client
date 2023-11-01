@@ -1,14 +1,3 @@
-import {
-  UilApps,
-  UilBriefcaseAlt,
-  UilEstate,
-  UilFileAlt,
-  UilMessage,
-  UilPalette,
-  UilScenery,
-  UilTimes,
-  UilUser,
-} from "@iconscout/react-unicons";
 import Link from "next/link";
 import { useEffect } from "react";
 import "../../../assets/style.css";
@@ -80,7 +69,7 @@ const MobileNavBar = () => {
                 className="nav__link"
                 onClick={handleSmoothScroll}
               >
-                <UilEstate className="nav__icon" />
+                <i className="fa fa-home nav__icon"></i>
                 Home
               </Link>
             </li>
@@ -90,7 +79,7 @@ const MobileNavBar = () => {
                 className="nav__link"
                 onClick={handleSmoothScroll}
               >
-                <UilUser className="nav__icon" /> Features
+                <i className="fa fa-cog nav__icon"></i> Features
               </Link>
             </li>
             <li className="nav__item">
@@ -99,7 +88,7 @@ const MobileNavBar = () => {
                 className="nav__link"
                 onClick={handleSmoothScroll}
               >
-                <UilFileAlt className="nav__icon" /> Testimonial
+                <i className="fa fa-file nav__icon"></i> Testimonial
               </Link>
             </li>
             <li className="nav__item">
@@ -108,7 +97,7 @@ const MobileNavBar = () => {
                 className="nav__link"
                 onClick={handleSmoothScroll}
               >
-                <UilBriefcaseAlt className="nav__icon" /> Pricing
+                <i className="fa fa-briefcase nav__icon"></i> Pricing
               </Link>
             </li>
             <li className="nav__item">
@@ -117,7 +106,7 @@ const MobileNavBar = () => {
                 className="nav__link"
                 onClick={handleSmoothScroll}
               >
-                <UilScenery className="nav__icon" /> Blog
+                <i className="fa fa-book nav__icon"></i> Blog
               </Link>
             </li>
             <li className="nav__item">
@@ -126,19 +115,19 @@ const MobileNavBar = () => {
                 className="nav__link"
                 onClick={handleSmoothScroll}
               >
-                <UilMessage className="nav__icon" /> Contact
+                <i className="fa fa-user nav__icon"></i> Contact
               </Link>
             </li>
           </ul>
-          <UilTimes className="nav__close" id="nav-close" />
+          <i className="fa fa-times nav__close" id="nav-close"></i>
         </div>
         <div className="nav__btns">
-          <UilPalette
-            className="theme-customization text-white"
+          <i
+            className="fa fa-moon theme-customization text-white"
             id="theme-button"
-          />
+          ></i>
           <div className="nav__toggle" id="nav-toggle">
-            <UilApps className="text-white" />
+            <i className="fa fa-list text-white text-xl"></i>
           </div>
         </div>
       </nav>
