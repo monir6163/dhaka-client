@@ -29,11 +29,20 @@ const NavBar = () => {
     // Add the scroll event listener to trigger the function
     window.addEventListener("scroll", handleScroll);
 
-    //nav item active color
+    //when scroll to top button clicked
+    const toTop = document.querySelector("#toTop");
+    if (toTop) {
+      toTop.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    }
 
     // Function to check screen width and set the isMobile state
     const handleResize = () => {
-      if (window.innerWidth < 1024) {
+      if (window.innerWidth <= 768) {
         setIsMobile(true);
       } else {
         setIsMobile(false);
@@ -77,15 +86,15 @@ const NavBar = () => {
       {isMobile ? (
         <MobileNavBar />
       ) : (
-        <header className="sticky top-0 z-50 md:hidden lg:block">
-          <nav className="container flex justify-between items-center">
+        <header className="sticky top-0 z-50 hidden md:block lg:block">
+          <nav className="lg:container md:px-6 flex justify-between items-center">
             <div className="py-5 text-color-secondary font-bold text-3xl">
               <Link href="/" className="ease-in duration-200">
                 <span className="text-white">Nextjs</span>14
               </Link>
             </div>
             <div>
-              <ul className="hidden lg:flex items-center space-x-6">
+              <ul className="hidden md:flex items-center space-x-6">
                 <li>
                   <Link
                     href="#home"

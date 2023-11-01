@@ -6,8 +6,8 @@ const FooterBar = () => {
           <div className="grid gap-10 md:grid-cols-3 pb-10">
             <div className="space-y-6">
               <h4 className="font-bold text-lg">
-                About <span className="text-color-secondary">Dhaka</span>
-                Client
+                About <span className="text-color-secondary">Nextjs</span>
+                14
               </h4>
               <p className="leading-relaxed">
                 This Should Be Used To Tell A Story And Include Any Testimonials
