@@ -11,6 +11,13 @@ phases:
     commands:
       - npm run build
 
+  post_build:
+    commands:
+      - echo Deploying to S3...
+      - aws s3 sync out/ s3://cwr-bucket --delete
+      - echo Invalidating CloudFront cache...
+      - aws cloudfront create-invalidation --distribution-id E2RDTVL2LMY1A --paths "/*"
+
 artifacts:
   base-directory: build
   files:
