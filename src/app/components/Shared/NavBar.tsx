@@ -5,6 +5,7 @@ import MobileNavBar from "./MobileNavBar";
 
 const NavBar = () => {
   const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
     //header background color change on scroll desktop and mobile
     function handleScroll() {
