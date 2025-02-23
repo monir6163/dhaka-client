@@ -16,9 +16,9 @@ phases:
       - echo Deploying to S3...
       - echo Listing build/ directory...
       - ls -la build/
-      - aws s3 sync build/ s3://reelsvideodownload.com --delete --debug
+      - aws s3 sync build/ s3://reelsvideodownload.com --delete
       - echo Invalidating CloudFront cache...
-      - aws cloudfront create-invalidation --distribution-id E2RDTVL2LMY1A --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id E2RDTVL2LMY1A --paths "/*" --debug
 
 artifacts:
   base-directory: build
