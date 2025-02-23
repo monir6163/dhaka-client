@@ -91,7 +91,7 @@ const NavBar = () => {
           <nav className="lg:container md:px-6 flex justify-between items-center">
             <div className="py-5 text-color-secondary font-bold text-3xl">
               <Link href="/" className="ease-in duration-200">
-                <span className="text-white">SASS</span>app
+                <span className="text-white">SASS</span>work
               </Link>
             </div>
             <div>
