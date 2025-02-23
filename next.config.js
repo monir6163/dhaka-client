@@ -2,10 +2,11 @@
 const nextConfig = {
   output: "export",
   trailingSlash: true,
-  distDir: "build",
+  reactStrictMode: true,
   images: {
     unoptimized: true,
   },
+  distDir: "build",
 };
 
-export default nextConfig;
+module.exports = nextConfig;
