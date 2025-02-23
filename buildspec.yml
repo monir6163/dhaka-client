@@ -1,4 +1,5 @@
 version: 0.2
+
 phases:
   install:
     runtime-versions:
@@ -8,7 +9,8 @@ phases:
   build:
     commands:
       - npm run build
+
 artifacts:
-  base-directory: build
+  base-directory: .next
   files:
     - "**/*"
