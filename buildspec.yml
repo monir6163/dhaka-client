@@ -14,7 +14,9 @@ phases:
   post_build:
     commands:
       - echo Deploying to S3...
-      - aws s3 sync out/ s3://cwr-bucket --delete
+      - echo Listing out/ directory...
+      - ls -la out/
+      - aws s3 sync out/ s3://reelsvideodownload.com --delete --debug
       - echo Invalidating CloudFront cache...
       - aws cloudfront create-invalidation --distribution-id E2RDTVL2LMY1A --paths "/*"
 
