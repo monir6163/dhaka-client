@@ -5,12 +5,14 @@ phases:
     runtime-versions:
       nodejs: 20
     commands:
-      - npm install
+      - export CI=false # Prevents tests from running automatically
+      - npm install # Installs dependencies
+
   build:
     commands:
-      - npm run build
+      - npm run build # Builds the Next.js app for static export
 
 artifacts:
-  base-directory: .next
+  base-directory: build # Upload only static files from 'build' directory
   files:
     - "**/*"
